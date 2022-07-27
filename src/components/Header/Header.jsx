@@ -1,13 +1,18 @@
 import React from "react";
-import BlogSpaceLogo from "../logo.svg";
+import BlogSpaceLogo from "../../images/logo.svg";
+import "./styles.css";
 
 // Encountring a problem while resizing the window to lower screen
 // Navbar is being shown on the right end
 // It is observed that this is happening due to the transition property
+// This can be solved by having two different components for navigation
+// one to display in mobile view and one to display in laptop view
 
 // On mobile screen, Navbar turned on. Resize the window to desktop screen
 // Now if the window is resized to mobile screen again. Navbar will be turned on, as it's been
 // turned on earlier.
+
+// BELOW 260px HEADER BEHAVING WEIRDLY
 
 export default function Header() {
   const [headerNav, setHeaderNav] = React.useState("header__navigation");

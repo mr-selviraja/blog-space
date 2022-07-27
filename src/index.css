@@ -9,13 +9,17 @@
   --color-secondary: #1a5276;
   --color-secondary-dark: #092739;
   --color-tertiary: #f66b06;
+  --color-tertiary-dark: #d45e09;
   --color-black: #303030;
   --color-gray: #eee;
+  --color-gray-dark: #bbb;
+  --color-white: #f5f5f5;
 }
 
-body {
+body,
+a {
   font-family: "Source Sans Pro", sans-serif;
-  color: var(--color-secondary-dark);
+  color: var(--color-secondary);
 }
 
 h1,
@@ -42,4 +46,15 @@ p {
 
 .txt-shadow {
   text-shadow: 0 0 2px var(--color-black);
+}
+
+section,
+main {
+  padding-top: 6em;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1em;
 }

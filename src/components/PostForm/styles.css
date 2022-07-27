@@ -1,0 +1,32 @@
+.postform {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea,
+input {
+    font-size: .9rem;
+    padding: .2rem;
+    margin-bottom: 1em;
+}
+
+textarea:focus,
+input:focus {
+    color: var(--color-secondary);
+}
+
+.postform button {
+    border: none;
+    background-color: var(--color-tertiary);
+    padding: .8em 0;
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.postform button:hover {
+    background-color: var(--color-tertiary-dark);
+}
